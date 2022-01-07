@@ -33,4 +33,14 @@ The graph above shows the percentage of successful, failed, and cancelled campai
 ### Challenges
 To begin the analysis, the data was first assessed to gain familiarity with the information in the dataset, while determining if the data needed to be modified or scrubbed. As a result, it was noted that the fields “deadline” and “launched_at” had issues since they contain Unix timestamps, which measure time as the number of seconds since midnight of January 1, 1970. This presented a challenge because in order to assess trends across time the data needed to be in a date format that accounted for day, month, and year. To resolve the problem, the unix seconds was converted to days by dividing the seconds by 60 to get minutes, then dividing the minutes by 60 to get hours, and finally dividing the number of hours by 24 to get days. Next, this number of days was added to the date Jan 1, 1970 to get the actual launch and deadline dates. Additionally, the data presently has goal amounts that are outliers, and these amounts could have been entered incorrectly. If these amounts are entered incorrectly then we should try our best to learn the actual values, and if we cannot then we can remove the outliers. However, if the outlier values are correct, then we should keep the data because it will give us a more accurate story. Other potential issues would be numeric values appearing as text in the spreadsheet. The data type would have to be changed to numeric or a data type showing monetary value (currency, accounting) using the data type dropdown menu in the Home ribbon.
 ## Results
-Some conclusions that can be gathered for Theater Outcomes by Launch Date are that launching campaigns in May or June are more likely to be successful. 
+The results will go over conclusions for Theater Outcomes by Launch Date, Outcomes Based on Goals, limitations of this dataset, and potential tables and graphs that can be created.
+### Theater Outcomes by Launch Date
+Conclusions that can be gathered for Theater Outcomes by Launch Date are that:
+- launching campaigns in May or June are more likely to be successful
+- launching campaigns in December should be avoided
+There may be a seasonal connection where campaigns are more likely to succeed during warmer months and less likely to succeed during colder months. 
+### Outcomes Based on Goals
+Conclusions that can be gathered from Outcomes Based on Goals is that the lower the fundraising goal, the more likely the campaign is to succeed. 
+### Limitations of Dataset
+
+### Potential Tables and Graphs
