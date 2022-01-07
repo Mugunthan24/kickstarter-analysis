@@ -19,8 +19,10 @@ The challenges involved with the data set involve:
 
 The first graph shows the outcome based on launch date for each month for all campaigns while the second shows the same information but specific to Theater. Both graphs have a similiar pattern where: 
 - the highest number of successful campaigns are in May and June
-- the highest number of failed campaigns are in October
-- the lowest number of successul campaigns began in December overall for all campaigns, and for those specific to theater.
+- the lowest number of successul campaigns began in December
+
+In the graph showing overall results January, June, July, and October appear to have the highest number of failed campaigns.
+In the graph specific to theater May, June, July, August, and October appear to have the highest number of failed campaigns.
 ### Analysis of Outcomes Based on Goals
 ![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png)
 The graph above shows the percentage of successful, failed, and cancelled campaigns for plays based on the goal amounnt. For plays, there are no cancelled campaigns creating an inverse relationship between the percentage of successful and failed campaigns. Based on the graphs, campaigns for plays that are:
@@ -31,4 +33,4 @@ The graph above shows the percentage of successful, failed, and cancelled campai
 ### Challenges
 To begin the analysis, the data was first assessed to gain familiarity with the information in the dataset, while determining if the data needed to be modified or scrubbed. As a result, it was noted that the fields “deadline” and “launched_at” had issues since they contain Unix timestamps, which measure time as the number of seconds since midnight of January 1, 1970. This presented a challenge because in order to assess trends across time the data needed to be in a date format that accounted for day, month, and year. To resolve the problem, the unix seconds was converted to days by dividing the seconds by 60 to get minutes, then dividing the minutes by 60 to get hours, and finally dividing the number of hours by 24 to get days. Next, this number of days was added to the date Jan 1, 1970 to get the actual launch and deadline dates. Additionally, the data presently has goal amounts that are outliers, and these amounts could have been entered incorrectly. If these amounts are entered incorrectly then we should try our best to learn the actual values, and if we cannot then we can remove the outliers. However, if the outlier values are correct, then we should keep the data because it will give us a more accurate story. Other potential issues would be numeric values appearing as text in the spreadsheet. The data type would have to be changed to numeric or a data type showing monetary value (currency, accounting) using the data type dropdown menu in the Home ribbon.
 ## Results
-
+Some conclusions that can be gathered for Theater Outcomes by Launch Date are that launching campaigns in May or June are more likely to be successful. 
