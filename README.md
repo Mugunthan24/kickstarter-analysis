@@ -9,6 +9,7 @@ To begin the analysis, the data was first assessed to gain familiarity with the 
 ### Analysis of Outcomes Based on Launch Date
 ![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Outcomes%20Based%20on%20Launch%20Date.png)
 ![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png)
+
 The first graph shows the outcome based on launch date for each month for all campaigns while the second shows the same information but specific to Theater. Both graphs have a similiar pattern where: 
 - the highest number of successful campaigns are in May and June
 - the highest number of failed campaigns are in October
