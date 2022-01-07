@@ -14,7 +14,7 @@ The first graph shows the outcome based on launch date for each month for all ca
 - the highest number of failed campaigns are in October
 - the lowest number of successul campaigns began in December overall for all campaigns, and for those specific to theater.
 ### Analysis of Outcomes Based on Goals
-![image_name](C:\Users\mugunthan.rengarajah\OneDrive - CLEAResult Consulting Inc\Desktop\Data Analytics Bootcamp\Analysis Projects\Crowdfunding Analysis\resources\Outcomes_vs_Goals)
+![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Outcomes_vs_Goals.png)
 The graph above shows the percentage of successful, failed, and cancelled campaigns for plays based on the goal amounnt. For plays, there are no cancelled campaigns creating an inverse relationship between the percentage of successful and failed campaigns. Based on the graphs, campaigns for plays that are:
 - under $5,000 have a 73% or slighly above of succeeding
 - have a fund raising goal between $35,000 and $44,999 have a 67% of succeeding
