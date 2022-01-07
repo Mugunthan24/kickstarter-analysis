@@ -5,7 +5,14 @@ Louise, a playwright started a crowdfunding campaign and noticed that she came c
 ### Purpose
 The purpose of the project is to determine if launch dates and funding goals affect the outcome of a fundraising campaign.
 ## Analysis and Challenges
-To begin the analysis, the data was first assessed to gain familiarity with the information in the dataset, while determining if the data needed to be modified or scrubbed. As a result, it was noted that the fields “deadline” and “launched_at” had issues since they contain Unix timestamps, which measure time as the number of seconds since midnight of January 1, 1970. This presented a challenge because in order to assess trends across time the data needed to be in a date format that accounted for day, month, and year. To resolve the problem, the unix seconds was converted to days by dividing the seconds by 60 to get minutes, then dividing the minutes by 60 to get hours, and finally dividing the number of hours by 24 to get days. Next, this number of days was added to the date Jan 1, 1970 to get the actual launch and deadline dates. Additionally, the data presently has goal amounts that are outliers, and these amounts could have been entered incorrectly. Other potential issues would be numeric values appearing as text in the spreadsheet. The data type would have to be changed to numeric or a data type showing monetary value (currency, accounting) using the data type dropdown menu in the Home ribbon.
+The analysis of the data involves looking examining: 
+- Outomes Based on Launch Date
+- Outcomes Based on Goals
+
+The challenges involved with the data set involve:
+- Data scrubbing
+- Accounting for outliers
+
 ### Analysis of Outcomes Based on Launch Date
 ![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Outcomes%20Based%20on%20Launch%20Date.png)
 ![image_name](https://github.com/Mugunthan24/kickstarter-analysis/blob/main/resources/Theater_Outcomes_vs_Launch.png)
@@ -21,3 +28,5 @@ The graph above shows the percentage of successful, failed, and cancelled campai
 - have a fund raising goal between $35,000 and $44,999 have a 67% of succeeding
 - with a goal between $45,000-$49,000 have a 100% chance of failing
 - greater than $50,000 have a 88% of failing
+### Challenges
+To begin the analysis, the data was first assessed to gain familiarity with the information in the dataset, while determining if the data needed to be modified or scrubbed. As a result, it was noted that the fields “deadline” and “launched_at” had issues since they contain Unix timestamps, which measure time as the number of seconds since midnight of January 1, 1970. This presented a challenge because in order to assess trends across time the data needed to be in a date format that accounted for day, month, and year. To resolve the problem, the unix seconds was converted to days by dividing the seconds by 60 to get minutes, then dividing the minutes by 60 to get hours, and finally dividing the number of hours by 24 to get days. Next, this number of days was added to the date Jan 1, 1970 to get the actual launch and deadline dates. Additionally, the data presently has goal amounts that are outliers, and these amounts could have been entered incorrectly. Other potential issues would be numeric values appearing as text in the spreadsheet. The data type would have to be changed to numeric or a data type showing monetary value (currency, accounting) using the data type dropdown menu in the Home ribbon.
