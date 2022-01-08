@@ -43,6 +43,12 @@ There may be a seasonal connection where campaigns are more likely to succeed du
 Conclusions that can be gathered from Outcomes Based on Goals is that the lower the fundraising goal, the more likely the campaign is to succeed. 
 ### Limitations of Dataset
 Some limitations of the dataset are:
-- There are outliers that we cannot say for certain were entered incorrectly
-- 
+- There are outliers that we cannot say for certain were entered incorrectly so it may not be a good idea to remove them
+- the data is representative of a sample and not a population. The sample may not be representative
+- the original data set needed scrubbed (Unix Time Stamps converted to dates)
+- New columns needed to be created using existing data (Years, Parent Category, Subcategory, etc.)
 ### Potential Tables and Graphs
+Some potential tables and graphs that could have been used are:
+- showing the relationship between number of backers and campaign outcomes
+- showing the relationship between the year the campaign was launched and campaign outcome
+- showing the relationship between the month the campaign was launched at the outcome specifically for plays
